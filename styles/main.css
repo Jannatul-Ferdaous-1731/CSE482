@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main-logo
+{
+	max-width:60px;
+}
+
+/*Search Section starts*/
+
+.underline
+{
+	margin:10px auto;
+	width: 50px;
+	height:10px;
+	background: #8025ef;
+
+}
+.header-section
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.search-form-container
+{
+	margin-top:0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-input
+{
+	border-radius: 20px;
+	outline: none;
+	padding:5px 10px;
+	font-size:1.4rem;
+	color:#333;
+}
+.text-input::placeholder
+{
+	font-style: italic;
+}
+/*Search Section ends*/
+
+
+/*Single Product Starts*/
+
+.img-container
+{
+	width: 100%;
+	position: relative;
+}
+
+.img-container img
+{
+	width:100%;
+	object-fit: cover;
+}
+
+.img-overlay
+{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	color:white;
+	transition: all 2s ease;
+}
+
+.img-overlay:hover
+{
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7));
+	color:red;
+}
+
+
+.drink-name
+{
+
+	position: absolute;
+	top: 80%;
+    left: 88%;
+    transform: translate(-80%, -50%);
+    
+}
+
+@media screen and (min-width:1170px)
+{
+	.products
+	{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		gap: 30px 30px;
+	}
+}
+
+/*Single Product Ends*/
+/*About Section Starts*/
+.about-section
+{
+	color:white;
+	display: flex;
+	min-height: 500px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)),url('../images/about.jpeg') center/cover no-repeat fixed;
+}
+/*About Section Ends*/
+/*Footer Section Starts*/
+.footer-section
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Footer Section Ends*/
+.footer-section .fab
+{
+	color:lightgray;
+}
+
+/*Search Page Starts */
+.result-section
+{
+	min-height: 100vh;
+}
+/*Search Page Starts */
+/*Form-section starts*/
+
+.form-section
+{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-section form .input-group
+{
+	margin-top:10px;
+}
+/*Form-section ends*/
+/*Developers Section*/
+.developers-section
+{
+	min-height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)), url('../images/dev.jpeg') center/cover no-repeat;
+}
+.devs
+{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	font-style: italic;
+}
+.pfp-container
+{
+	width: 200px;
+}
+.pfp
+{
+	width: 100%;
+	object-fit: cover;
+	background: transparent;
+	border-radius: 100px;
+}
+/*Developers Section Ends*/
+
+
+
